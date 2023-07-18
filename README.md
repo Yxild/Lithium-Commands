@@ -10,7 +10,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Yxild
 ```
 
 > Creates the Window
-```
+```lua
 local Window = Library.CreateWindow({
 	Title = <string>,
 	Discord = {
@@ -22,7 +22,7 @@ local Window = Library.CreateWindow({
 ```
 
 > Creates a Card
-```
+```lua
 Library.CreateCard({
 	Title = <string>,
 	Description = <string>,
@@ -32,12 +32,12 @@ Library.CreateCard({
 ```
 
 > Sets the Debug Text (purple line) on the bottom
-```
+```lua
 Library.SetDebugText(<string>)
 ```
 
 > Sets a Keybind for the Library
-```
+```lua
 Library.SetKey({
     Type = <string>, -- Either "KillKeybind" or "OpenKeybind"
     Keybind = Enum.KeyCode.<inputkey>
