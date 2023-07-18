@@ -33,7 +33,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Yxild
 local Window = Library.CreateWindow({
 	Title = "Lithium Commands",
 	Discord = {
-		DiscordURL = "roblox"
+		Code = "roblox"
 	},
 	OpenKeybind = Enum.KeyCode.Insert,
 	KillKeybind = Enum.KeyCode.End
