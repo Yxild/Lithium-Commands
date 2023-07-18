@@ -3,7 +3,7 @@
 ]]
 
 local Library = {	}
-local PoppinsFont = Font.fromId(11702779409)
+local PoppinsFont = Font.new(11702779409)
 
 local Services = {
 	TweenService = game:GetService("TweenService"),
@@ -180,7 +180,7 @@ Window.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Window.BorderColor3 = Color3.fromRGB(49, 49, 49)
 Window.Position = UDim2.new(0.304941535, 0, 0.291208804, 0)
 Window.Size = UDim2.new(0, 600, 0, 380)
-Window.Parent = Window
+Window.Parent = LiCommands
 
 local DebugBar = Instance.new("Frame")
 DebugBar.Name = "DebugBar"
