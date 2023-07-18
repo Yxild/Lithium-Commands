@@ -1,5 +1,9 @@
 # Lithium-Commands
-Lithium Commands | A project that's made in my spare time :D
+Lithium Commands isn't directly a command thingy like IY or Fades Admin, it's a Library which you can use to make a Command list for yourself.
+
+Note; this is licensed under the GPL v3.0 License provided from GNU, you cannot sell this source or a request will made to take down the source you've modified or are distributing.
+
+Distributing your scripts without Credits will be requested from Me (Yxild), if not followed you will turn gay.
 
 # Documentation 
 (not good)
@@ -8,6 +12,7 @@ Lithium Commands | A project that's made in my spare time :D
 ```lua
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Yxild/Lithium-Commands/main/Library/Library.lua"), 1)()
 ```
+
 
 > Creates the Window
 ```lua
@@ -21,6 +26,7 @@ local Window = Library.CreateWindow({
 })
 ```
 
+
 > Creates a Card
 ```lua
 Library.CreateCard({
@@ -31,10 +37,12 @@ Library.CreateCard({
 })
 ```
 
+
 > Sets the Debug Text (purple line) on the bottom
 ```lua
 Library.SetDebugText(<string>)
 ```
+
 
 > Sets a Keybind for the Library
 ```lua
