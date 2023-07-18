@@ -1,8 +1,4 @@
--- Gui to Lua
--- Version: 3.6
-
 -- Instances:
-
 local LiCommands = Instance.new("ScreenGui")
 local DEBUG = Instance.new("Folder")
 local ExampleItems = Instance.new("Folder")
