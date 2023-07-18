@@ -434,18 +434,18 @@ local ExampleCommandCard = {
 
 -- Set Tab Buttons:
 Commands.MouseButton1Click:Connect(function()
-	Settings.Visible = false
+	Settings_2.Visible = false
 	Settings.TextColor3 = Color3.fromRGB(120, 120, 120)
 	
-	Commands.Visible = true
+	Commands_2.Visible = true
 	Commands.TextColor3 = Color3.fromRGB(139, 75, 139)
 end)
 
 Settings.MouseButton1Click:Connect(function()
-	Commands.Visible = false
+	Commands_2.Visible = false
 	Commands.TextColor3 = Color3.fromRGB(120, 120, 120)
 	
-	Settings.Visible = true
+	Settings_2.Visible = true
 	Settings.TextColor3 = Color3.fromRGB(139, 75, 139)
 end)
 
