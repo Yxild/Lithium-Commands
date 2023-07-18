@@ -180,7 +180,7 @@ Window.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Window.BorderColor3 = Color3.fromRGB(49, 49, 49)
 Window.Position = UDim2.new(0.304941535, 0, 0.291208804, 0)
 Window.Size = UDim2.new(0, 600, 0, 380)
-Window.Parent = LiCommands
+Window.Parent = WindowFolder
 
 local DebugBar = Instance.new("Frame")
 DebugBar.Name = "DebugBar"
