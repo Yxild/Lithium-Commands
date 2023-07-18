@@ -471,7 +471,7 @@ function Library.CreateWindow(t)
 	if not (Values.Discord == nil) and not (Values.Discord.Code == nil) then
 		local DiscordMessage = string.format("Join our Discord Server to chat with other %s users and get support for issues!", Values.Title)
 		
-		Description_2 = DiscordMessage
+		Description_2.Text = DiscordMessage
 		RunButton_2.MouseButton1Click:Connect(function()
 			-- Join Discord Server Handler:
 			local RequestFunction = (syn and syn.request) or (request or http.request or http_request)
