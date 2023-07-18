@@ -19,7 +19,6 @@ local Keybinds = {
 -- Functions:
 function println(Message)
 	local Time = DateTime.now()
-	
 	print(string.format("[ Lithium Module | %s ]: %s", tostring(Time:FormatLocalTime("LL", "en-us")), tostring(Message)))
 end
 
@@ -102,6 +101,7 @@ ExampleItems.Parent = DEBUG
 
 -- Items
 local Example_Command_Card = Instance.new("Frame")
+Example_Command_Card.Visible = false
 Example_Command_Card.Name = "Example_Command_Card"
 Example_Command_Card.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Example_Command_Card.BorderColor3 = Color3.fromRGB(49, 49, 49)
@@ -542,6 +542,7 @@ function Library.CreateCard(t)
 	
 	-- Change Parent
 	NewCard.Parent = Commands_3
+    	NewCard.Visible = true
 end
 
 function Library.SetKey(t)
