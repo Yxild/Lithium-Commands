@@ -578,4 +578,18 @@ Services.UserInputService.InputBegan:Connect(function(InputObject, GameEvent)
 	end
 end)
 
+-- Search Bar:
+SearchBar::GetPropertyChangedSignal("Text"):Connect(function()
+	local InputedText = string.lower(SearchBar.Text)
+	
+	for (_, Card in pair(Commands_2)) do
+		if (Card:IsA("Frame")) then
+			Card.Visible = string.find(string.lower(Card.Name), InputText) and true or false
+		else
+			Card.Visible = true
+		end
+	end
+end)
+
+
 return Library
