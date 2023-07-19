@@ -579,7 +579,7 @@ Services.UserInputService.InputBegan:Connect(function(InputObject, GameEvent)
 end)
 
 -- Search Bar:
-SearchBar::GetPropertyChangedSignal("Text"):Connect(function()
+SearchBar:GetPropertyChangedSignal("Text"):Connect(function()
 	local InputedText = string.lower(SearchBar.Text)
 	
 	for (_, Card in pair(Commands_2)) do
