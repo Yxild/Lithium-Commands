@@ -582,7 +582,7 @@ end)
 SearchBar:GetPropertyChangedSignal("Text"):Connect(function()
 	local InputedText = string.lower(SearchBar.Text)
 	
-	for (_, Card in pair(Commands_3:GetChildren())) do
+	for _, Card in pair(Commands_3:GetChildren()) do
 		if (Card:IsA("Frame")) then
 			if (string.find(string.lower(Card.Name), InputText)) then
 				Card.Visible = true
