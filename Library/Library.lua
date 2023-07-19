@@ -518,6 +518,7 @@ function Library.CreateCard(t)
 	
 	-- Create's a new Card
 	local NewCard = ExampleCommandCard.Path:Clone()
+	NewCard.Name = Values.Title
 	
 	-- Set Title, Description Text
 	NewCard.Title.Text = Values.Title
